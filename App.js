@@ -5,7 +5,7 @@ import { createBottomTabNavigator } from 'react-navigation-tabs';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import {createDrawerNavigator,customDrawerComponent, DrawerItems} from 'react-navigation-drawer';
 
-import {createStackNavigator} from 'react-navigation-stack' 
+
 
 import Home from './src/screens/Home'
 import Login from './src/screens/Login'
@@ -128,29 +128,10 @@ const TabNavigator = createBottomTabNavigator(
       }
     }
 },
-// Login:{
-//   screen: Login,
- 
-// },
 
 
 }
 )
-
-// const navOptionHandler = (navigation) => ({
-//   header:null
-// })
-
-// const stackNav = createStackNavigator({
-//   Login:{
-//     screen:Login,
-//     navigationOptions:navOptionHandler
-//   },
-//   SignUp:{
-//     screen:signUP,
-//     navigationOptions:navOptionHandler
-//   }
-// })
 
 export default createAppContainer(TabNavigator);
 
@@ -177,54 +158,5 @@ const styles = StyleSheet.create({
 
 })
 
-// const TabNavigator = createBottomTabNavigator(
-//     {
-//       Home:{
-//         screen: Home,
-//         navigationOptions: {
-//           tabBarIcon: ({ focused }) => {
-//             return <FontAwesome5 name="home" size={20} color={focused ? '#FF2D55' : '#a9a9a9'} /> 
-//           },
-//           tabBarOptions: {
-//             activeTintColor: '#FF2D55',
-//           }
-//         }
-//       },
-//       Search:{
-//         screen: Category,
-//         navigationOptions: {
-//           tabBarIcon: ({ focused }) => {
-//             return <FontAwesome5 name="search" size={20} color={focused ? '#FF2D55' : '#a9a9a9'} /> 
-//           },
-//           tabBarOptions: {
-//             activeTintColor: '#FF2D55',
-//           }
-//         }
-//     },
-//     Cart:{
-//         screen:Map,
-//         navigationOptions: {
-//           tabBarIcon: ({ focused }) => {
-//             return <FontAwesome5 name="shopping-cart" size={20} color={focused ? '#FF2D55' : '#a9a9a9'} /> 
-//           },
-//           tabBarOptions: {
-//             activeTintColor: '#FF2D55',
-//           }
-//         }
-//     },
-//     Mappa:{
-//         screen: Home,
-//         navigationOptions: {
-//           tabBarIcon: ({ focused }) => {
-//             return <FontAwesome5 name="map-marker-alt" size={20} color={focused ? '#FF2D55' : '#a9a9a9'} /> 
-//           },
-//           tabBarOptions: {
-//             activeTintColor: '#FF2D55',
-//             paddingVertical: 15
-//           }
-//         }
-//     }
-//   }
-// )
 
 
