@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, SafeAreaView, TouchableOpacity, KeyboardAvoidingView, Image, ScrollView, StyleSheet, ImageBackground } from 'react-native';
+import { View, Text, SafeAreaView, TouchableOpacity,TouchableHighlight, KeyboardAvoidingView, Image, ScrollView, StyleSheet, ImageBackground } from 'react-native';
 import { Button, Container, Item, Input, Label, Picker, Textarea, Right, Title, Form } from 'native-base';
 import { TextInput } from 'react-native-paper';
 //import Spinner from 'react-native-loading-spinner-overlay';
@@ -54,6 +54,7 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: SIZES.PADDING *2,
     paddingVertical: SIZES.PADDING * 2,
+    backgroundColor:'#fff'
   },
   divider: {
     alignItems: 'center',
@@ -132,10 +133,10 @@ export default class Login extends Component {
 
               <Form>
                 <Item rounded style={{marginBottom:15}}>
-                  <Input style={styles.formControl} placeholder='Email Address' />
+                  <Input style={styles.formControl} placeholder='Email Address' placeholderTextColor="#AFAFAF" />
                 </Item>
                 <Item rounded style={{marginBottom:15}}>
-                  <Input style={styles.formControl} placeholder='Password' />
+                  <Input style={styles.formControl} placeholder='Password' placeholderTextColor="#AFAFAF"/>
                 </Item>
               </Form>
 
@@ -165,9 +166,16 @@ export default class Login extends Component {
                 }}>
                 Don't have an account?
             </Text>
-              <TouchableOpacity onPress={()=>Actions.jump('register')}>
-                <Title style={{color:'green',opacity:0.7,fontSize:16}}>Create Account</Title>
-              </TouchableOpacity>
+              {/* <TouchableOpacity  onPress={() => this.props.navigation.navigate('Signup')}>
+                <Title style={{color:'green',opacity:0.7,fontSize:16,fontWeight:'700'}}>Create Account</Title>
+              </TouchableOpacity> */}
+               <TouchableHighlight  onPress={() => this.props.navigation.navigate('Signup')}
+                activeOpacity={0.6}
+                underlayColor="#fff"
+                testOnly_pressed={'no'}
+               >
+               <Title style={{ color: 'green', opacity: 0.7, fontSize: 16, fontWeight: '700' }}>Create Account</Title>
+              </TouchableHighlight>
             </View>
           </View>
         </View>

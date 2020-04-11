@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text,ScrollView, StatusBar, StyleSheet, SafeAreaView,TouchableOpacity } from 'react-native'
-import { Button, Thumbnail, Container, Item, Input, Label, Picker, Textarea, Right, Title, Form, Header, Content, Card, CardItem, Body, Left, Icon } from 'native-base';
+import { View, Text, ScrollView, StatusBar, StyleSheet, SafeAreaView, TouchableOpacity, TouchableHighlight } from 'react-native'
+import { Button, Thumbnail, Container, Item, Input, Label, Picker, Textarea, Right, Title, Form, Header, Content, Card, CardItem, Body, Left, Icon, ListItem, List } from 'native-base';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import { Actions } from 'react-native-router-flux'
 
@@ -10,168 +10,49 @@ export default class Account extends Component {
         return (
             <>
                 <StatusBar backgroundColor="green" barStyle="light-content" />
-                <ScrollView style={{ flex: 1 }}>
-                    <View style={{ backgroundColor: '#f3f6f9', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 10, borderBottomWidth: 2, borderBottomColor: '#EAECEF' }}>
-                        <View style={{ alignItems: 'flex-start', padding: 10, borderBottomWidth: 2, borderBottomColor: '#EAECEF' }}>
-                            <Text style={{ fontSize: 20, fontWeight: "bold", fontFamily: 'AvenirNextLTPro-Bold', color: "green" }}>Your Account</Text>
-                        </View>
-                        <View style={{ justifyContent: "flex-end", flexDirection: 'row' }}>
+                <View style={{ backgroundColor: '#f3f6f9', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 10, }}>
+                    <View style={{ alignItems: 'flex-start', padding: 10, }}>
+                        <Text style={{ fontSize: 18, fontWeight: "bold", fontFamily: 'AvenirNextLTPro-Bold', color: "green" }}>Your Account</Text>
+                    </View>
+                    {/* <View style={{ justifyContent: "flex-end", flexDirection: 'row' }}>
                             <Text style={{ fontSize: 10, marginRight: 20, fontFamily: 'AvenirNextLTPro-Bold', color: "#000" }}>
-                                <FontAwesome5 name="search" size={20} />
+                                <FontAwesome5 name="search" size={18} />
                             </Text>
 
                             <Text style={{ fontSize: 10, fontFamily: 'AvenirNextLTPro-Bold', color: "#000" }}>
-                                <FontAwesome5 name="shopping-cart" size={20} />
+                                <FontAwesome5 name="shopping-cart" size={18} />
                             </Text>
-                        </View>
+                        </View> */}
+                </View>
+                <ScrollView>
+                   <TouchableOpacity>
+                   <View style={styles.container}>
+                      <Text style={styles.bold}>Settings</Text>
                     </View>
-                    <Container>
+                   </TouchableOpacity>
+                   <TouchableOpacity>
+                   <View style={styles.container}>
+                      <Text style={styles.bold}>Settings</Text>
+                    </View>
+                   </TouchableOpacity>
+                   <TouchableOpacity>
+                   <View style={styles.container}>
+                      <Text style={styles.bold}>Settings</Text>
+                    </View>
+                   </TouchableOpacity>
+                   <TouchableOpacity>
+                   <View style={styles.container}>
+                      <Text style={styles.bold}>Settings</Text>
+                    </View>
+                   </TouchableOpacity>
+                   <TouchableOpacity onPress={() => this.props.navigation.navigate('Settings')}>
+                   <View style={styles.container}>
+                      <Text style={styles.bold}>Settings</Text>
+                    </View>
+                   </TouchableOpacity>
+                   
 
-                        <Content>
-
-
-                            <View>
-
-                                <View>
-                                    <Card style={{ borderRadius: 10, }} onPress={() => Actions.jump('login')}>
-
-                                        <CardItem style={{ borderRadius: 0, }}>
-                                            <Left>
-                                                <View style={{ flexDirection: 'column' }}>
-                                                    <TouchableOpacity
-                                                        onPress={() => this.props.navigation.navigate('Login', { screen: "Login" })}>
-                                                        <Text style={styles.androidButtonText}>Go to FeedItem</Text>
-                                                    </TouchableOpacity>
-
-                                                </View>
-                                            </Left>
-
-                                            {/* <Right>
-                                        <Icon name="right" style={{color:'#000'}}/>
-                                        </Right> */}
-                                        </CardItem>
-
-
-
-                                    </Card>
-                                    <Card style={{ borderRadius: 10, }}>
-
-                                        <CardItem style={{ borderRadius: 0, }}>
-                                            <Left>
-                                                <View style={{ flexDirection: 'column' }}>
-                                                    <Text>Personal Details</Text>
-
-                                                </View>
-                                            </Left>
-
-                                            {/* <Right>
-                                        <Icon name="right" style={{color:'#000'}}/>
-                                        </Right> */}
-                                        </CardItem>
-
-
-
-                                    </Card>
-                                    <Card style={{ borderRadius: 10, }}>
-
-                                        <CardItem style={{ borderRadius: 0, }}>
-                                            <Left>
-                                                <View style={{ flexDirection: 'column' }}>
-                                                    <Text>Change Password</Text>
-
-                                                </View>
-                                            </Left>
-
-                                            {/* <Right>
-                                        <Icon name="right" style={{color:'#000'}}/>
-                                        </Right> */}
-                                        </CardItem>
-
-
-
-                                    </Card>
-                                    <Card style={{ borderRadius: 10, }}>
-
-                                        <CardItem style={{ borderRadius: 0, }}>
-                                            <Left>
-                                                <View style={{ flexDirection: 'column' }}>
-                                                    <Text>Address Book</Text>
-
-                                                </View>
-                                            </Left>
-
-                                            {/* <Right>
-                                        <Icon name="right" style={{color:'#000'}}/>
-                                        </Right> */}
-                                        </CardItem>
-
-
-
-                                    </Card>
-                                    <Card style={{ borderRadius: 10, }}>
-
-                                        <CardItem style={{ borderRadius: 0, }}>
-                                            <Left>
-                                                <View style={{ flexDirection: 'column' }}>
-                                                    <Text>Phone Book</Text>
-
-                                                </View>
-                                            </Left>
-
-                                            {/* <Right>
-                                        <Icon name="right" style={{color:'#000'}}/>
-                                        </Right> */}
-                                        </CardItem>
-
-
-
-                                    </Card>
-                                    <Card style={{ borderRadius: 10, }}>
-
-                                        <CardItem style={{ borderRadius: 0, }}>
-                                            <Left>
-                                                <View style={{ flexDirection: 'column' }}>
-                                                    <Text>Payment Card</Text>
-
-                                                </View>
-                                            </Left>
-
-                                            {/* <Right>
-                                        <Icon name="right" style={{color:'#000'}}/>
-                                        </Right> */}
-                                        </CardItem>
-
-
-
-                                    </Card>
-                                    <Card style={{ borderRadius: 10, }}>
-
-                                        <CardItem style={{ borderRadius: 0, }}>
-                                            <Left>
-                                                <View style={{ flexDirection: 'column' }}>
-                                                    <Text>Settings</Text>
-
-                                                </View>
-                                            </Left>
-
-                                            {/* <Right>
-                                        <Icon name="right" style={{color:'#000'}}/>
-                                        </Right> */}
-                                        </CardItem>
-
-
-
-                                    </Card>
-
-
-
-
-                                </View>
-                            </View>
-
-
-                        </Content>
-                    </Container>
+                 
                 </ScrollView>
             </>
         );
@@ -222,11 +103,11 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         padding: SIZES.PADDING / 0.83,
     },
-    container: {
-        flex: 1,
-        paddingHorizontal: SIZES.PADDING * 2,
-        paddingVertical: SIZES.PADDING * 2,
-    },
+    // container: {
+    //     flex: 1,
+    //     paddingHorizontal: SIZES.PADDING * 2,
+    //     paddingVertical: SIZES.PADDING * 2,
+    // },
     divider: {
         alignItems: 'center',
         backgroundColor: COLORS.GREY,
@@ -276,6 +157,36 @@ const styles = StyleSheet.create({
         paddingLeft: 20,
         fontSize: 14
 
-    }
+    },
+    container: {
+        flex: 1,
+        justifyContent: "space-between",
+        backgroundColor: "#fff",
+        paddingHorizontal: 15,
+        paddingVertical:15,
+        margin: 2,
+      },
+      top: {
+        flex: 1,
+        backgroundColor: "grey",
+        borderWidth: 5,
+        borderTopLeftRadius: 20,
+        borderTopRightRadius: 20,
+      },
+      middle: {
+        flex: 2,
+        backgroundColor: "beige",
+        borderWidth: 5,
+      },
+      bottom: {
+        flex: 3,
+        backgroundColor: "pink",
+        borderWidth: 5,
+        borderBottomLeftRadius: 20,
+        borderBottomRightRadius: 20,
+      },
+      bold:{
+          fontWeight:'700'
+      },
 
 })

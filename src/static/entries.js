@@ -26,22 +26,19 @@ export const ENTRIES2 = [
     {
         title: 'Favourites landscapes 1',
         subtitle: 'Lorem ipsum dolor sit amet',
-        illustration: 'https://cdn.grofers.com/app/images/products/full_screen/pro_393022.jpg'
-    },
-    {
-        title: 'Favourites landscapes 2',
-        subtitle: 'Lorem ipsum dolor sit amet et nuncat mergitur',
-        illustration: 'https://cdn.grofers.com/app/images/products/sliding_image/393022a.jpg?ts=1584435825'
+        illustration: 'http://cdn.grofers.com/app/images/products/full_screen/pro_400105.jpg'
     },
     {
         title: 'Favourites landscapes 3',
         subtitle: 'Lorem ipsum dolor sit amet et nuncat',
-        illustration: 'https://cdn.grofers.com/app/images/products/sliding_image/393022b.jpg?ts=1584435825'
+        illustration: 'https://cdn.grofers.com/app/images/products/sliding_image/400105a.jpg'
     },
     {
-        title: 'Favourites landscapes 4',
+        title: 'Favourites landscapes 2',
         subtitle: 'Lorem ipsum dolor sit amet et nuncat mergitur',
-        illustration: 'https://cdn.grofers.com/app/images/products/sliding_image/393022c.jpg?ts=1584435825'
-    }
+        illustration: 'http://cdn.grofers.com/app/images/products/sliding_image/400105b.jpg?ts=1573475655'
+    },
+   
+   
    
 ];

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, TouchableOpacity,TouchableHighlight, Image, TextInput, StyleSheet, Dimensions, ScrollView, SafeAreaView, StatusBar } from 'react-native'
+import { Text, View, TouchableOpacity, Image, TextInput, StyleSheet, Dimensions, ScrollView, SafeAreaView, StatusBar } from 'react-native'
 import Carousel, { Pagination } from 'react-native-snap-carousel';
 import { sliderWidth, itemWidth } from '../styles/SliderEntry.style';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
@@ -132,37 +132,8 @@ export default class Home extends Component {
         >
           <StatusBar backgroundColor="green" barStyle="light-content" />
           <View style={{ flex: 1, padding: 0, }}>
-            <View style={{ padding: 16, marginHorizontal: 10 }}>
-              <Text style={{ fontSize: 20, fontWeight: '700' }}>
-                Welcome to
-              </Text>
-              <Text style={{ fontSize: 30, color: 'green', fontWeight: "bold" }}>
-                Alraya Grocery
-              </Text>
-            </View>
-            <View style={{ padding: 16, justifyContent: 'center', alignItems: 'center', width: width / 1 }}>
-              <Text style={{ fontSize: 18, fontWeight: "bold", alignSelf: 'stretch', textAlign: 'center' }}>
-                Save Money , Live Better
-              </Text>
-              <View style={{ flexDirection: 'row', justifyContent: 'flex-start' }}>
-                <Button uppercase={false}
-                  onPress={() => this.props.navigation.navigate('Shop')}
-                  //onPress={() => this.login()}
-                  style={{ marginHorizontal: 0, marginTop: 15, paddingHorizontal: 30, backgroundColor: 'green',borderRadius:50 }}
-                >
-                  <Text style={{ color: '#fdfdfd', fontSize: 14, }}>Start Shopping</Text>
-                </Button>
-                <Button bordered success
-                  mode=""
-                  uppercase={false}
-                  onPress={() => this.props.navigation.navigate('Signup')}
-                  //onPress={() => this.login()}
-                  style={{ marginHorizontal: 10, paddingHorizontal: 45, marginTop: 15,borderRadius:50 }}
-                >
-                  <Text style={{ color: '#222' }}>Register</Text>
-                </Button>
-              </View>
-            </View>
+          
+           
             <View>
               {banner}
             </View>

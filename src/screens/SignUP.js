@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, SafeAreaView, TouchableOpacity, KeyboardAvoidingView, Image, ScrollView, StyleSheet, ImageBackground } from 'react-native';
+import { View, Text, SafeAreaView, TouchableOpacity,TouchableHighlight, KeyboardAvoidingView, Image, ScrollView, StyleSheet, ImageBackground } from 'react-native';
 import { Button, Container, Item, Input, Label, Picker, Textarea, Right, Title, Form } from 'native-base';
 import { TextInput } from 'react-native-paper';
 //import Spinner from 'react-native-loading-spinner-overlay';
@@ -52,8 +52,9 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    paddingHorizontal: SIZES.PADDING *2,
+    paddingHorizontal: SIZES.PADDING * 2,
     paddingVertical: SIZES.PADDING * 2,
+    backgroundColor: '#fff'
   },
   divider: {
     alignItems: 'center',
@@ -70,7 +71,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: SIZES.BASE,
     position: 'absolute',
   },
- 
+
   input: {
     borderColor: COLORS.GREY,
     borderRadius: SIZES.BASE,
@@ -89,7 +90,7 @@ const styles = StyleSheet.create({
   signin: {
     paddingVertical: SIZES.PADDING * 1.33,
   },
-  
+
   subtitle: {
     color: COLORS.GREY,
     fontSize: SIZES.SUBTITLE,
@@ -100,10 +101,10 @@ const styles = StyleSheet.create({
     letterSpacing: 1,
     marginBottom: SIZES.BASE,
   },
-  formControl:{
-    paddingLeft:20,
-    fontSize:14
-    
+  formControl: {
+    paddingLeft: 20,
+    fontSize: 14
+
   }
 
 })
@@ -123,37 +124,37 @@ export default class SignUP extends Component {
               style={{ maxHeight: 300, maxWidth: 400 }}
             />
           </View>
-          <View style={{ marginBottom: 18, alignItems: 'center',marginBottom:20 }}>
-            <Title style={{color:'#333',fontWeight:'bold',fontSize:25}}>Register</Title>
-            <Text style={styles.subtitle}>Please sign in to get full access</Text>
+          <View style={{ marginBottom: 18, alignItems: 'center', marginBottom: 20 }}>
+            <Title style={{ color: '#333', fontWeight: 'bold', fontSize: 25 }}>Register</Title>
+            <Text style={styles.subtitle}>Please sign up to get full access</Text>
           </View>
           <View style={{ flex: 2 }}>
             <View style={{}}>
 
               <Form>
-                <Item rounded style={{marginBottom:15}}>
-                  <Input style={styles.formControl} placeholder='First Name' />
+                <Item rounded style={{ marginBottom: 15 }}>
+                  <Input style={styles.formControl} placeholder='First Name' placeholderTextColor="#AFAFAF" />
                 </Item>
-                <Item rounded style={{marginBottom:15}}>
-                  <Input style={styles.formControl} placeholder='Last Name' />
+                <Item rounded style={{ marginBottom: 15 }}>
+                  <Input style={styles.formControl} placeholder='Last Name' placeholderTextColor="#AFAFAF" />
                 </Item>
-                <Item rounded style={{marginBottom:15}}>
-                  <Input style={styles.formControl} placeholder='Email Address' />
+                <Item rounded style={{ marginBottom: 15 }}>
+                  <Input style={styles.formControl} placeholder='Email Address' placeholderTextColor="#AFAFAF" />
                 </Item>
-                <Item rounded style={{marginBottom:15}}>
-                  <Input style={styles.formControl} placeholder='Password' />
+                <Item rounded style={{ marginBottom: 15 }}>
+                  <Input style={styles.formControl} placeholder='Password' placeholderTextColor="#AFAFAF" />
                 </Item>
-                <Item rounded style={{marginBottom:15}}>
-                  <Input style={styles.formControl} placeholder='Confirm Password' />
+                <Item rounded style={{ marginBottom: 15 }}>
+                  <Input style={styles.formControl} placeholder='Confirm Password' placeholderTextColor="#AFAFAF" />
                 </Item>
               </Form>
 
-              <Button rounded block 
+              <Button rounded block
                 mode=""
                 uppercase={false}
                 // onPress={()=>Actions.jump('profile')}
                 //onPress={() => this.login()}
-                style={{marginTop:5,backgroundColor:'green'}}
+                style={{ marginTop: 5, backgroundColor: 'green' }}
               >
                 <Text style={{ color: '#fdfdfd' }}>SIGN UP</Text>
               </Button>
@@ -174,9 +175,16 @@ export default class SignUP extends Component {
                 }}>
                 Already have an account?
             </Text>
-              <TouchableOpacity onPress={()=>Actions.jump('register')}>
-                <Title style={{color:'green',opacity:0.7,fontSize:16}}>Login</Title>
-              </TouchableOpacity>
+              {/* <TouchableOpacity onPress={() => this.props.navigation.navigate('Login')}>
+                <Title style={{ color: 'green', opacity: 0.7, fontSize: 16, fontWeight: '700' }}>Login</Title>
+              </TouchableOpacity> */}
+              <TouchableHighlight  onPress={() => this.props.navigation.navigate('Login')}
+                activeOpacity={0.6}
+                underlayColor="#fff"
+                testOnly_pressed={'no'}
+               >
+               <Title style={{ color: 'green', opacity: 0.7, fontSize: 16, fontWeight: '700' }}>Login</Title>
+              </TouchableHighlight>
             </View>
           </View>
         </View>

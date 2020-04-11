@@ -6,7 +6,7 @@ import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Rig
 
 const { width, height } = Dimensions.get('window')
 
-class Product extends Component {
+class Cart extends Component {
     render() {
         return (
             <>
@@ -31,12 +31,34 @@ class Product extends Component {
 
 
                 <Container>
-                  
+                    <Header style={{ backgroundColor: '#f3f6f9' }}>
+                    <StatusBar backgroundColor="green" barStyle="light-content" />
+                        <Left>
+                            <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', padding: 5, }}>
+                                <TouchableOpacity onPress={() => this.props.navigation.goBack()}>
+                                    <FontAwesome5 name="arrow-left" size={20} color={'#000'} />
+                                </TouchableOpacity>
+                                <Text style={{ fontSize: 20, fontWeight: "bold", fontFamily: 'AvenirNextLTPro-Bold', color: "green", marginLeft: 15 }}>Cart</Text>
+                            </View>
+                        </Left>
+                        {/* <Body>
+                                <Title>Header</Title>
+                            </Body> */}
+                        <Right >
+                            <Text style={{ fontSize: 10, marginRight: 20, fontFamily: 'AvenirNextLTPro-Bold', color: "#000" }}>
+                                <FontAwesome5 name="search" size={20} />
+                            </Text>
+
+                            <Text style={{ fontSize: 10, fontFamily: 'AvenirNextLTPro-Bold', color: "#000" }}>
+                                <FontAwesome5 name="shopping-cart" size={20} />
+                            </Text>
+                        </Right>
+                    </Header>
                     <ScrollView
                         scrollEventThrottle={16}
                     >
                         <Content>
-                        <Card style={styles.card}>
+                            <Card style={styles.card}>
                                 <CardItem style={{ marginLeft: 0, paddingLeft: 0 }}>
                                     <Image resizeMode={'contain'} source={require('../../assets/images/i1.jpg')}
                                         style={{ width: width / 3.65, height: width / 3.65, borderRadius: 0 }}
@@ -47,17 +69,11 @@ class Product extends Component {
                                         <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', fontSize: 12, color: '#666' }}>1 Kg</Text>
 
                                         <Text style={styles.price}>₹46</Text>
-                                        <Text style={{color:'#666',fontSize:12}}>Quantity : 4</Text>
                                     </View>
                                     <Right>
-                                      <View style={{flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
-                                      <Button transparent small>
-                                        <FontAwesome5 name="plus" color={'green'} fontSize={25}></FontAwesome5>
+                                        <Button bordered success small>
+                                            <Text style={{fontSize:12}}>Add</Text>
                                         </Button>
-                                        <Button small transparent style={{marginLeft:30}}>
-                                           <FontAwesome5 name="trash" color={'red'} fontSize={25}></FontAwesome5>
-                                        </Button>
-                                      </View>
                                     </Right>
                                 </CardItem>
                             </Card>
@@ -66,26 +82,19 @@ class Product extends Component {
                                     <Image resizeMode={'contain'} source={require('../../assets/images/i2.jpg')}
                                         style={{ width: width / 3.65, height: width / 3.65, borderRadius: 0 }}
                                     />
-                                    <View style={{ alignItems: 'flex-start', justifyContent: 'center',flex:1 }}>
-                                        
+                                    <View style={{ alignItems: 'flex-start', justifyContent: 'center', flex: 1.9 }}>
+                                        <Text style={{ fontFamily: 'AvenirNextLTPro-Bold', color: 'green', fontSize: 12 }}>Up to 65% OFF</Text>
                                         <Text style={{ fontSize: 16, fontWeight: '700' }}>Family Farm Sugar</Text>
                                         <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', fontSize: 12, color: '#666' }}>1 Kg</Text>
 
                                         <Text style={styles.price}>₹46</Text>
-                                        <Text style={{color:'#666',fontSize:12}}>Quantity : 4</Text>
 
                                     </View>
                                     <Right>
-                                      <View style={{flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
-                                      <Button transparent small>
-                                        <FontAwesome5 name="plus" color={'green'} fontSize={25}></FontAwesome5>
+                                        <Button bordered success small>
+                                            <Text style={{fontSize:12}}>Add</Text>
                                         </Button>
-                                        <Button small transparent style={{marginLeft:30}}>
-                                           <FontAwesome5 name="trash" color={'red'} fontSize={25}></FontAwesome5>
-                                        </Button>
-                                      </View>
                                     </Right>
-                                   
                                 </CardItem>
                             </Card>
                             <Card style={styles.card}>
@@ -94,24 +103,17 @@ class Product extends Component {
                                         style={{ width: width / 3.65, height: width / 3.65, borderRadius: 0 }}
                                     />
                                     <View style={{ alignItems: 'flex-start', justifyContent: 'center', flex: 1.9 }}>
-                                       
+                                        <Text style={{ fontFamily: 'AvenirNextLTPro-Bold', color: 'green', fontSize: 12 }}>Up to 65% OFF</Text>
                                         <Text style={{ fontSize: 16, fontWeight: '700' }}>Family Farm Sugar</Text>
                                         <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', fontSize: 12, color: '#666' }}>1 Kg</Text>
 
                                         <Text style={styles.price}>₹46</Text>
-                                        <Text style={{color:'#666',fontSize:12}}>Quantity : 4</Text>
                                     </View>
                                     <Right>
-                                      <View style={{flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
-                                      <Button transparent small>
-                                        <FontAwesome5 name="plus" color={'green'} fontSize={25}></FontAwesome5>
+                                        <Button bordered success small>
+                                            <Text style={{fontSize:12}}>Add</Text>
                                         </Button>
-                                        <Button small transparent style={{marginLeft:30}}>
-                                           <FontAwesome5 name="trash" color={'red'} fontSize={25}></FontAwesome5>
-                                        </Button>
-                                      </View>
                                     </Right>
-                                   
                                 </CardItem>
                             </Card>
                             <Card style={styles.card}>
@@ -120,25 +122,18 @@ class Product extends Component {
                                         style={{ width: width / 3.65, height: width / 3.65, borderRadius: 0 }}
                                     />
                                     <View style={{ alignItems: 'flex-start', justifyContent: 'center', flex: 1.9 }}>
-                                      
+                                        <Text style={{ fontFamily: 'AvenirNextLTPro-Bold', color: 'green', fontSize: 12 }}>Up to 65% OFF</Text>
                                         <Text style={{ fontSize: 16, fontWeight: '700' }}>Family Farm Sugar</Text>
                                         <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', fontSize: 12, color: '#666' }}>1 Kg</Text>
 
                                         <Text style={styles.price}>₹46</Text>
-                                        <Text style={{color:'#666',fontSize:12}}>Quantity : 4</Text>
 
                                     </View>
                                     <Right>
-                                      <View style={{flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
-                                      <Button transparent small>
-                                        <FontAwesome5 name="plus" color={'green'} fontSize={25}></FontAwesome5>
+                                        <Button bordered success small>
+                                            <Text style={{fontSize:12}}>Add</Text>
                                         </Button>
-                                        <Button small transparent style={{marginLeft:30}}>
-                                           <FontAwesome5 name="trash" color={'red'} fontSize={25}></FontAwesome5>
-                                        </Button>
-                                      </View>
                                     </Right>
-                                   
                                 </CardItem>
                             </Card>
                             <Card style={styles.card}>
@@ -147,25 +142,18 @@ class Product extends Component {
                                         style={{ width: width / 3.65, height: width / 3.65, borderRadius: 0 }}
                                     />
                                     <View style={{ alignItems: 'flex-start', justifyContent: 'center', flex: 1.9 }}>
-                                        
+                                        <Text style={{ fontFamily: 'AvenirNextLTPro-Bold', color: 'green', fontSize: 12 }}>Up to 65% OFF</Text>
                                         <Text style={{ fontSize: 16, fontWeight: '700' }}>Family Farm Sugar</Text>
                                         <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', fontSize: 12, color: '#666' }}>1 Kg</Text>
 
                                         <Text style={styles.price}>₹46</Text>
-                                        <Text style={{color:'#666',fontSize:12}}>Quantity : 4</Text>
 
                                     </View>
                                     <Right>
-                                      <View style={{flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
-                                      <Button transparent small>
-                                        <FontAwesome5 name="plus" color={'green'} fontSize={25}></FontAwesome5>
+                                        <Button bordered success small>
+                                            <Text style={{fontSize:12}}>Add</Text>
                                         </Button>
-                                        <Button small transparent style={{marginLeft:30}}>
-                                           <FontAwesome5 name="trash" color={'red'} fontSize={25}></FontAwesome5>
-                                        </Button>
-                                      </View>
                                     </Right>
-                                   
                                 </CardItem>
                             </Card>
                             <Card style={styles.card}>
@@ -174,30 +162,33 @@ class Product extends Component {
                                         style={{ width: width / 3.65, height: width / 3.65, borderRadius: 0 }}
                                     />
                                     <View style={{ alignItems: 'flex-start', justifyContent: 'center', flex: 1.9 }}>
-                                     
+                                        <Text style={{ fontFamily: 'AvenirNextLTPro-Bold', color: 'green', fontSize: 12 }}>Up to 65% OFF</Text>
                                         <Text style={{ fontSize: 16, fontWeight: '700' }}>Family Farm Sugar</Text>
                                         <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', fontSize: 12, color: '#666' }}>1 Kg</Text>
 
                                         <Text style={styles.price}>₹46</Text>
-                                        <Text style={{color:'#666',fontSize:12}}>Quantity : 4</Text>
 
                                     </View>
                                     <Right>
-                                      <View style={{flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
-                                      <Button transparent small>
-                                        <FontAwesome5 name="plus" color={'green'} fontSize={25}></FontAwesome5>
+                                        <Button bordered success small>
+                                            <Text style={{fontSize:12}}>Add</Text>
                                         </Button>
-                                        <Button small transparent style={{marginLeft:30}}>
-                                           <FontAwesome5 name="trash" color={'red'} fontSize={25}></FontAwesome5>
-                                        </Button>
-                                      </View>
                                     </Right>
-                                   
                                 </CardItem>
                             </Card>
                         </Content>
                     </ScrollView>
-                   
+                    <Footer>
+                        <FooterTab style={{ backgroundColor: '#8bc34a' }}>
+                            <View style={{flex:0.5,flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+                                <Text style={{fontSize:14,fontWeight:'700',color:'#fdfdfd'}}>Rs 989</Text>
+                                <Text style={{fontSize:10,fontWeight:'700',color:'yellow'}}>Total Save 209</Text>
+                            </View>
+                            <Button style={{backgroundColor:'green'}} onPress={() => this.props.navigation.navigate('Delivery')}>
+                                <Text style={{color:"#fff",fontWeight:'700',fontSize:13}}>Checkout</Text>
+                            </Button>
+                        </FooterTab>
+                    </Footer>
                 </Container>
 
 
@@ -216,8 +207,7 @@ class Product extends Component {
 const styles = StyleSheet.create({
     card: {
         width: width / 1.01,
-        marginBottom: 0,
-        marginTop:0
+        marginBottom:0
 
 
     },
@@ -269,4 +259,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default Product;
+export default Cart;
