@@ -13,9 +13,9 @@ class SpicesAndSalt extends Component {
             <View style={{ backgroundColor:'#fff',flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 10, }}>
             <View style={{flexDirection:'row',alignItems:'center',padding:10,}}>
             <TouchableOpacity onPress={() => this.props.navigation.goBack()}>
-                   <FontAwesome5 name="arrow-left" size={20} color={'#000'} />
+                   <FontAwesome5 name="arrow-left" size={18} color={'#000'} />
                    </TouchableOpacity>
-                <Text style={{marginLeft:20,fontSize:20,fontWeight:"bold",fontFamily:'AvenirNextLTPro-Bold',color:"green"}}>Groceries</Text>
+                <Text style={{marginLeft:20,fontSize:18,fontWeight:"bold",fontFamily:'AvenirNextLTPro-Bold',color:"green"}}>Groceries</Text>
             </View>
          {/* <View style={{justifyContent:"flex-end",flexDirection:'row'}}>
          <Text style={{ fontSize: 10,marginRight:20, fontFamily: 'AvenirNextLTPro-Bold', color: "#000" }}>

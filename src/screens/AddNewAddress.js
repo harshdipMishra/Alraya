@@ -32,18 +32,18 @@ class ChangeAddress extends Component {
 
                 <Container>
 
-                    <Header style={{ backgroundColor: 'green' }}>
+                    <Header style={{ backgroundColor: '#fff' }}>
                         <StatusBar backgroundColor="green" barStyle="light-content" />
                         <Left>
                             <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', padding: 5, }}>
                                 <TouchableOpacity onPress={() => this.props.navigation.goBack()}>
-                                    <FontAwesome5 name="arrow-left" size={20} color={'#fff'} />
+                                    <FontAwesome5 name="arrow-left" size={18} color={'#333'} />
                                 </TouchableOpacity>
 
                             </View>
                         </Left>
                         <Body>
-                            <Title style={{ fontWeight: '700', }}>Add New Address</Title>
+                            <Title style={{ fontWeight: '700',color:'#333',fontSize:18,marginLeft:10 }}>Add New Address</Title>
                         </Body>
 
                     </Header>
@@ -165,7 +165,7 @@ class ChangeAddress extends Component {
                                 <Text style={{fontSize:10,fontWeight:'700',color:'yellow'}}>Total Save 209</Text>
                             </View> */}
                             <Button style={{ backgroundColor: 'green' }}>
-                                <Text style={{ color: "#fff", fontWeight: '700', fontSize: 14 }}>Add Address</Text>
+                                <Text style={{ color: "#fff", fontWeight: '700', fontSize: 12 }}>Add Address</Text>
                             </Button>
                         </FooterTab>
                     </Footer>

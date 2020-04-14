@@ -31,7 +31,7 @@ class Order extends Component {
 
 
         <Container>
-          <Header style={{ backgroundColor: '#f3f6f9' }}>
+          <Header style={{ backgroundColor: '#fff' }}>
             <StatusBar backgroundColor="green" barStyle="light-content" />
             <Left>
               <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', padding: 5, }}>

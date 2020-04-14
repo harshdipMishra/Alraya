@@ -12,20 +12,20 @@ class Items extends Component {
         return (
             <>
 
-                <View style={{ backgroundColor: '#f3f6f9', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 10, borderBottomWidth: 2, borderBottomColor: '#EAECEF' }}>
+                <View style={{ backgroundColor: '#fff', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 10, borderBottomWidth: 2, borderBottomColor: '#EAECEF' }}>
                     <View style={{ flexDirection:'row',alignItems: 'center',justifyContent:'center', padding: 5, }}>
                    <TouchableOpacity onPress={() => this.props.navigation.goBack()}>
-                   <FontAwesome5 name="arrow-left" size={20} color={'#000'} />
+                   <FontAwesome5 name="arrow-left" size={18} color={'#000'} />
                    </TouchableOpacity>
-                        <Text style={{ fontSize: 20, fontWeight: "bold", fontFamily: 'AvenirNextLTPro-Bold', color: "green",marginLeft:15 }}>Spices & Salt</Text>
+                        <Text style={{ fontSize: 18, fontWeight: "bold", fontFamily: 'AvenirNextLTPro-Bold', color: "green",marginLeft:15 }}>Spices & Salt</Text>
                     </View>
                     <View style={{ justifyContent: "flex-end", flexDirection: 'row' }}>
                         <Text style={{ fontSize: 10, marginRight: 20, fontFamily: 'AvenirNextLTPro-Bold', color: "#000" }}>
-                            <FontAwesome5 name="search" size={20} />
+                            <FontAwesome5 name="search" size={18} />
                         </Text>
 
                         <Text style={{ fontSize: 10, fontFamily: 'AvenirNextLTPro-Bold', color: "#000" }}>
-                            <FontAwesome5 name="shopping-cart" size={20} />
+                            <FontAwesome5 name="shopping-cart" size={18} />
                         </Text>
                     </View>
                 </View>

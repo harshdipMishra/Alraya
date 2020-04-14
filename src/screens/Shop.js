@@ -12,7 +12,7 @@ class Shop extends Component {
           
             <View style={{ backgroundColor:'#fff',flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 10, }}>
             <View style={{alignItems:'flex-start',padding:10,}}>
-                <Text style={{fontSize:20,fontWeight:"bold",fontFamily:'AvenirNextLTPro-Bold',color:"green"}}>Shop</Text>
+                <Text style={{fontSize:18,fontWeight:"bold",fontFamily:'AvenirNextLTPro-Bold',color:"green"}}>Shop</Text>
             </View>
          {/* <View style={{justifyContent:"flex-end",flexDirection:'row'}}>
          <Text style={{ fontSize: 10,marginRight:20, fontFamily: 'AvenirNextLTPro-Bold', color: "#000" }}>

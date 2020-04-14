@@ -31,14 +31,14 @@ class Cart extends Component {
 
 
                 <Container>
-                    <Header style={{ backgroundColor: '#f3f6f9' }}>
+                    <Header style={{ backgroundColor: '#fff' }}>
                     <StatusBar backgroundColor="green" barStyle="light-content" />
                         <Left>
                             <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', padding: 5, }}>
                                 <TouchableOpacity onPress={() => this.props.navigation.goBack()}>
-                                    <FontAwesome5 name="arrow-left" size={20} color={'#000'} />
+                                    <FontAwesome5 name="arrow-left" size={18} color={'#000'} />
                                 </TouchableOpacity>
-                                <Text style={{ fontSize: 20, fontWeight: "bold", fontFamily: 'AvenirNextLTPro-Bold', color: "green", marginLeft: 15 }}>Cart</Text>
+                                <Text style={{ fontSize: 18, fontWeight: "bold", fontFamily: 'AvenirNextLTPro-Bold', color: "green", marginLeft: 15 }}>Cart</Text>
                             </View>
                         </Left>
                         {/* <Body>
@@ -46,11 +46,11 @@ class Cart extends Component {
                             </Body> */}
                         <Right >
                             <Text style={{ fontSize: 10, marginRight: 20, fontFamily: 'AvenirNextLTPro-Bold', color: "#000" }}>
-                                <FontAwesome5 name="search" size={20} />
+                                <FontAwesome5 name="search" size={18} />
                             </Text>
 
                             <Text style={{ fontSize: 10, fontFamily: 'AvenirNextLTPro-Bold', color: "#000" }}>
-                                <FontAwesome5 name="shopping-cart" size={20} />
+                                <FontAwesome5 name="shopping-cart" size={18} />
                             </Text>
                         </Right>
                     </Header>
@@ -181,11 +181,11 @@ class Cart extends Component {
                     <Footer>
                         <FooterTab style={{ backgroundColor: '#8bc34a' }}>
                             <View style={{flex:0.5,flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
-                                <Text style={{fontSize:14,fontWeight:'700',color:'#fdfdfd'}}>Rs 989</Text>
+                                <Text style={{fontSize:12,fontWeight:'700',color:'#fdfdfd'}}>Rs 989</Text>
                                 <Text style={{fontSize:10,fontWeight:'700',color:'yellow'}}>Total Save 209</Text>
                             </View>
                             <Button style={{backgroundColor:'green'}} onPress={() => this.props.navigation.navigate('Delivery')}>
-                                <Text style={{color:"#fff",fontWeight:'700',fontSize:13}}>Checkout</Text>
+                                <Text style={{color:"#fff",fontWeight:'700',fontSize:12}}>Checkout</Text>
                             </Button>
                         </FooterTab>
                     </Footer>

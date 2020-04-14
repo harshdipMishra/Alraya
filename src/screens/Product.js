@@ -36,6 +36,7 @@ class Product extends Component {
                         scrollEventThrottle={16}
                     >
                         <Content>
+                        <TouchableOpacity  onPress={() => this.props.navigation.navigate('Checkout')}>
                         <Card style={styles.card}>
                                 <CardItem style={{ marginLeft: 0, paddingLeft: 0 }}>
                                     <Image resizeMode={'contain'} source={require('../../assets/images/i1.jpg')}
@@ -50,17 +51,18 @@ class Product extends Component {
                                         <Text style={{color:'#666',fontSize:12}}>Quantity : 4</Text>
                                     </View>
                                     <Right>
-                                      <View style={{flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
-                                      <Button transparent small>
-                                        <FontAwesome5 name="plus" color={'green'} fontSize={25}></FontAwesome5>
+                                      <View style={{flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+                                      <Button bordered small success style={{justifyContent:'center',alignSelf:'center'}}>
+                                       <Text style={{fontSize:10}}>Add</Text>
                                         </Button>
-                                        <Button small transparent style={{marginLeft:30}}>
-                                           <FontAwesome5 name="trash" color={'red'} fontSize={25}></FontAwesome5>
+                                        <Button small bordered danger style={{marginTop:5,paddingHorizontal: 20,}}>
+                                           <FontAwesome5 name="trash-alt" fontSize={25}></FontAwesome5>
                                         </Button>
                                       </View>
                                     </Right>
                                 </CardItem>
                             </Card>
+                        </TouchableOpacity>
                             <Card style={styles.card}>
                                 <CardItem style={{ marginLeft: 0, paddingLeft: 0 }}>
                                     <Image resizeMode={'contain'} source={require('../../assets/images/i2.jpg')}
@@ -76,12 +78,12 @@ class Product extends Component {
 
                                     </View>
                                     <Right>
-                                      <View style={{flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
-                                      <Button transparent small>
-                                        <FontAwesome5 name="plus" color={'green'} fontSize={25}></FontAwesome5>
+                                      <View style={{flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+                                      <Button bordered small success style={{justifyContent:'center',alignSelf:'center'}}>
+                                       <Text style={{fontSize:10}}>Add</Text>
                                         </Button>
-                                        <Button small transparent style={{marginLeft:30}}>
-                                           <FontAwesome5 name="trash" color={'red'} fontSize={25}></FontAwesome5>
+                                        <Button small bordered danger style={{marginTop:5,paddingHorizontal: 20,}}>
+                                           <FontAwesome5 name="trash-alt" fontSize={25}></FontAwesome5>
                                         </Button>
                                       </View>
                                     </Right>
@@ -102,12 +104,12 @@ class Product extends Component {
                                         <Text style={{color:'#666',fontSize:12}}>Quantity : 4</Text>
                                     </View>
                                     <Right>
-                                      <View style={{flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
-                                      <Button transparent small>
-                                        <FontAwesome5 name="plus" color={'green'} fontSize={25}></FontAwesome5>
+                                      <View style={{flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+                                      <Button bordered small success style={{justifyContent:'center',alignSelf:'center'}}>
+                                       <Text style={{fontSize:10}}>Add</Text>
                                         </Button>
-                                        <Button small transparent style={{marginLeft:30}}>
-                                           <FontAwesome5 name="trash" color={'red'} fontSize={25}></FontAwesome5>
+                                        <Button small bordered danger style={{marginTop:5,paddingHorizontal: 20,}}>
+                                           <FontAwesome5 name="trash-alt" fontSize={25}></FontAwesome5>
                                         </Button>
                                       </View>
                                     </Right>
@@ -129,12 +131,12 @@ class Product extends Component {
 
                                     </View>
                                     <Right>
-                                      <View style={{flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
-                                      <Button transparent small>
-                                        <FontAwesome5 name="plus" color={'green'} fontSize={25}></FontAwesome5>
+                                      <View style={{flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+                                      <Button bordered small success style={{justifyContent:'center',alignSelf:'center'}}>
+                                       <Text style={{fontSize:10}}>Add</Text>
                                         </Button>
-                                        <Button small transparent style={{marginLeft:30}}>
-                                           <FontAwesome5 name="trash" color={'red'} fontSize={25}></FontAwesome5>
+                                        <Button small bordered danger style={{marginTop:5,paddingHorizontal: 20,}}>
+                                           <FontAwesome5 name="trash-alt" fontSize={25}></FontAwesome5>
                                         </Button>
                                       </View>
                                     </Right>
@@ -156,12 +158,12 @@ class Product extends Component {
 
                                     </View>
                                     <Right>
-                                      <View style={{flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
-                                      <Button transparent small>
-                                        <FontAwesome5 name="plus" color={'green'} fontSize={25}></FontAwesome5>
+                                      <View style={{flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+                                      <Button bordered small success style={{justifyContent:'center',alignSelf:'center'}}>
+                                       <Text style={{fontSize:10}}>Add</Text>
                                         </Button>
-                                        <Button small transparent style={{marginLeft:30}}>
-                                           <FontAwesome5 name="trash" color={'red'} fontSize={25}></FontAwesome5>
+                                        <Button small bordered danger style={{marginTop:5,paddingHorizontal: 20,}}>
+                                           <FontAwesome5 name="trash-alt" fontSize={25}></FontAwesome5>
                                         </Button>
                                       </View>
                                     </Right>
@@ -183,12 +185,12 @@ class Product extends Component {
 
                                     </View>
                                     <Right>
-                                      <View style={{flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
-                                      <Button transparent small>
-                                        <FontAwesome5 name="plus" color={'green'} fontSize={25}></FontAwesome5>
+                                      <View style={{flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+                                      <Button bordered small success style={{justifyContent:'center',alignSelf:'center'}}>
+                                       <Text style={{fontSize:10}}>Add</Text>
                                         </Button>
-                                        <Button small transparent style={{marginLeft:30}}>
-                                           <FontAwesome5 name="trash" color={'red'} fontSize={25}></FontAwesome5>
+                                        <Button small bordered danger style={{marginTop:5,paddingHorizontal: 20,}}>
+                                           <FontAwesome5 name="trash-alt" fontSize={25}></FontAwesome5>
                                         </Button>
                                       </View>
                                     </Right>
@@ -217,7 +219,8 @@ const styles = StyleSheet.create({
     card: {
         width: width / 1.01,
         marginBottom: 0,
-        marginTop:0
+        marginTop:0,
+        borderRadius:0
 
 
     },
@@ -260,7 +263,7 @@ const styles = StyleSheet.create({
     cartSection: {
         flexDirection: 'column',
         justifyContent: 'flex-start',
-        paddingBottom: 20,
+        paddingBottom: 0,
         flexWrap: 'wrap',
     },
     item: {

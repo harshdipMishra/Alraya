@@ -94,14 +94,14 @@ export default class Checkout extends Component {
       <>
        <StatusBar backgroundColor="green" barStyle="light-content" />
         <Container>
-          <Header style={{backgroundColor:'green'}}>
+          <Header style={{backgroundColor:'#fff'}}>
             <Left>
               <Button transparent   onPress={() => this.props.navigation.goBack()}>
-              <FontAwesome5 name="arrow-left" size={20} color={'white'} />
+              <FontAwesome5 name="arrow-left" size={18} color={'#333'} />
               </Button>
             </Left>
             <Body>
-              <Title style={{fontWeight:'700'}}>Checkout</Title>
+              <Title style={{fontWeight:'700',color:'#333',marginLeft:-20}}>Checkout</Title>
             </Body>
             <Right />
           </Header>
@@ -167,10 +167,10 @@ Family Farm Sugar</Text>
           <Footer>
             <FooterTab style={{backgroundColor: 'green'}}>
               <Button success onPress={() => this.props.navigation.navigate('Fevorite')}>
-                <Text style={{fontSize:14,color:"#fff",fontWeight:'700'}}>Add to Fevorite</Text>
+                <Text style={{fontSize:12,color:"#fff",fontWeight:'700'}}>Add to Fevorite</Text>
               </Button>
               <Button onPress={() => this.props.navigation.navigate('Cart')}>
-                <Text style={{fontSize:14,color:"#fff",fontWeight:'700'}}>Add to cart</Text>
+                <Text style={{fontSize:12,color:"#fff",fontWeight:'700'}}>Add to cart</Text>
               </Button>
             </FooterTab>
           </Footer>

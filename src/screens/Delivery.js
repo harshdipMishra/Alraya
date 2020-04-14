@@ -32,18 +32,18 @@ class Delivery extends Component {
 
                 <Container>
 
-                    <Header style={{ backgroundColor: 'green' }}>
+                    <Header style={{ backgroundColor: '#fff' }}>
                         <StatusBar backgroundColor="green" barStyle="light-content" />
                         <Left>
                             <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', padding: 5, }}>
                                 <TouchableOpacity onPress={() => this.props.navigation.goBack()}>
-                                    <FontAwesome5 name="arrow-left" size={20} color={'#fff'} />
+                                    <FontAwesome5 name="arrow-left" size={18} color={'#333'} />
                                 </TouchableOpacity>
 
                             </View>
                         </Left>
                         <Body>
-                            <Title style={{ fontWeight: '700' }}>Delivery Options</Title>
+                            <Title style={{ fontWeight: '700',fontSize:18,marginLeft:-30,color:'#333' }}>Delivery Options</Title>
                         </Body>
                         <Right >
                             {/* <Text style={{ fontSize: 10, marginRight: 20, fontFamily: 'AvenirNextLTPro-Bold', color: "#000" }}>
@@ -117,7 +117,7 @@ class Delivery extends Component {
                                 <Text style={{fontSize:10,fontWeight:'700',color:'yellow'}}>Total Save 209</Text>
                             </View> */}
                             <Button style={{ backgroundColor: 'green' }}>
-                                <Text style={{ color: "#fff", fontWeight: '700', fontSize: 14 }}>Proceed to Payment</Text>
+                                <Text style={{ color: "#fff", fontWeight: '700', fontSize: 12 }}>Proceed to Payment</Text>
                             </Button>
                         </FooterTab>
                     </Footer>

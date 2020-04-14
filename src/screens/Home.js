@@ -102,8 +102,8 @@ export default class Home extends Component {
             />
              <TouchableOpacity onPress={() => this.props.navigation.navigate('ChangeAddress')} style={{position:'relative',marginRight:20}}>
             {/* <FontAwesome5 name="map" size={20} /> */}
-            <Text style={{fontWeight:'700',}}>Your Location  <FontAwesome5 name="edit" size={12} color={'green'}/></Text>
-            <Text style={{ fontSize: 11,fontFamily: 'AvenirNextLTPro-Bold', color: "#333",}}>
+            <Text style={{fontWeight:'700',}}>Your Location  <FontAwesome5 name="pencil-alt" size={12} color={'green'}/></Text>
+            <Text style={{ fontSize: 11,fontFamily: 'AvenirNextLTPro-Bold', color: "#afafaf",}}>
                1004,Parsvnath Planet,Gomti Nagar
               </Text>
              
@@ -295,7 +295,7 @@ export default class Home extends Component {
               <View style={{ paddingLeft: 10 }}>
                 <Text style={{ fontSize: 17, fontFamily: 'AvenirNextLTPro-Bold', marginBottom: 20, fontWeight: '700' }}>Top Sever's Today</Text>
                 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} >
-                  <View style={{ borderRadius:10,marginRight: 10, width: width / 2.2, height: width / 1.50, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderColor: '#f4f4f4', borderWidth: 1 }}>
+                  <View style={{ borderRadius:10,marginRight: 10, width: width / 2.2, height: width / 1.40, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderColor: '#f4f4f4', borderWidth: 1 }}>
                     <Image source={require('../../assets/images/i2.jpg')}
                       style={{ width: width / 3.9, height: width / 3.40, borderRadius: 0 }}
                     />
@@ -309,13 +309,13 @@ export default class Home extends Component {
                       <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', color: '#666',fontSize:12 }}>4 Kg</Text>
                       
                     </View>
-                    <View style={{ borderWidth:0,backgroundColor: 'green', paddingVertical: 10, position: 'absolute', left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center',borderBottomRightRadius: 10,borderBottomLeftRadius: 10, }}>
-                      <Text style={{ fontSize: 14, fontFamily: 'AvenirNextLTPro-Bold', color: '#fff', fontWeight: '700' }}>Add to cart </Text>
+                    <View style={{ borderWidth:0,backgroundColor: 'green', paddingVertical: 10, position: 'absolute', left: 10, right: 10, bottom: 10, justifyContent: 'center', alignItems: 'center',borderRadius:5 }}>
+                       <Text style={{ fontSize: 12, fontFamily: 'AvenirNextLTPro-Bold', color: '#fff', fontWeight: '700' }}><FontAwesome5 name="plus" size={10}></FontAwesome5>  Add to cart </Text>
 
                     </View>
 
                   </View>
-                  <View style={{ borderRadius:10,marginRight: 10, width: width / 2.2, height: width / 1.50, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderColor: '#f4f4f4', borderWidth: 1 }}>
+                  <View style={{ borderRadius:10,marginRight: 10, width: width / 2.2, height: width / 1.40, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderColor: '#f4f4f4', borderWidth: 1 }}>
                     <Image source={require('../../assets/images/i1.jpg')}
                       style={{ width: width / 3.9, height: width / 3.40, borderRadius: 0 }}
                     />
@@ -329,14 +329,14 @@ export default class Home extends Component {
                       <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', color: '#666',fontSize:12 }}>4 Kg</Text>
                       
                     </View>
-                    <View style={{ borderWidth:0,backgroundColor: 'green', paddingVertical: 10, position: 'absolute', left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center',borderBottomRightRadius: 10,borderBottomLeftRadius: 10, }}>
-                      <Text style={{ fontSize: 14, fontFamily: 'AvenirNextLTPro-Bold', color: '#fff', fontWeight: '700' }}>Add to cart </Text>
+                    <View style={{ borderWidth:0,backgroundColor: 'green', paddingVertical: 10, position: 'absolute', left: 10, right: 10, bottom: 10, justifyContent: 'center', alignItems: 'center',borderRadius:5 }}>
+                       <Text style={{ fontSize: 12, fontFamily: 'AvenirNextLTPro-Bold', color: '#fff', fontWeight: '700' }}><FontAwesome5 name="plus" size={10}></FontAwesome5>  Add to cart </Text>
 
                     </View>
 
                   </View>
 
-                  <View style={{ borderRadius:10,marginRight: 10, width: width / 2.2, height: width / 1.50, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderColor: '#f4f4f4', borderWidth: 1 }}>
+                  <View style={{ borderRadius:10,marginRight: 10, width: width / 2.2, height: width / 1.40, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderColor: '#f4f4f4', borderWidth: 1 }}>
                     <Image source={require('../../assets/images/i3.jpg')}
                       style={{ width: width / 3.9, height: width / 3.40, borderRadius: 0 }}
                     />
@@ -350,14 +350,14 @@ export default class Home extends Component {
                       <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', color: '#666',fontSize:12 }}>4 Kg</Text>
                       
                     </View>
-                    <View style={{ borderWidth:0,backgroundColor: 'green', paddingVertical: 10, position: 'absolute', left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center',borderBottomRightRadius: 10,borderBottomLeftRadius: 10, }}>
-                      <Text style={{ fontSize: 14, fontFamily: 'AvenirNextLTPro-Bold', color: '#fff', fontWeight: '700' }}>Add to cart </Text>
+                    <View style={{ borderWidth:0,backgroundColor: 'green', paddingVertical: 10, position: 'absolute', left: 10, right: 10, bottom: 10, justifyContent: 'center', alignItems: 'center',borderRadius:5 }}>
+                       <Text style={{ fontSize: 12, fontFamily: 'AvenirNextLTPro-Bold', color: '#fff', fontWeight: '700' }}><FontAwesome5 name="plus" size={10}></FontAwesome5>  Add to cart </Text>
 
                     </View>
 
                   </View>
 
-                  <View style={{ borderRadius:10,marginRight: 10, width: width / 2.2, height: width / 1.50, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderColor: '#f4f4f4', borderWidth: 1 }}>
+                  <View style={{ borderRadius:10,marginRight: 10, width: width / 2.2, height: width / 1.40, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderColor: '#f4f4f4', borderWidth: 1 }}>
                     <Image source={require('../../assets/images/i5.jpg')}
                       style={{ width: width / 3.9, height: width / 3.40, borderRadius: 0 }}
                     />
@@ -371,8 +371,8 @@ export default class Home extends Component {
                       <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', color: '#666',fontSize:12 }}>4 Kg</Text>
                       
                     </View>
-                    <View style={{ borderWidth:0,backgroundColor: 'green', paddingVertical: 10, position: 'absolute', left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center',borderBottomRightRadius: 10,borderBottomLeftRadius: 10, }}>
-                      <Text style={{ fontSize: 14, fontFamily: 'AvenirNextLTPro-Bold', color: '#fff', fontWeight: '700' }}>Add to cart </Text>
+                    <View style={{ borderWidth:0,backgroundColor: 'green', paddingVertical: 10, position: 'absolute', left: 10, right: 10, bottom: 10, justifyContent: 'center', alignItems: 'center',borderRadius:5 }}>
+                       <Text style={{ fontSize: 12, fontFamily: 'AvenirNextLTPro-Bold', color: '#fff', fontWeight: '700' }}><FontAwesome5 name="plus" size={10}></FontAwesome5>  Add to cart </Text>
 
                     </View>
 
@@ -437,7 +437,7 @@ export default class Home extends Component {
               <View style={{ paddingLeft: 15, marginBottom: 20 }}>
                 <Text style={{ fontSize: 18, fontFamily: 'AvenirNextLTPro-Bold', marginBottom: 20, fontWeight: '700' }}>Top Selling</Text>
                 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} >
-                  <View style={{ borderRadius:10,marginRight: 10, width: width / 2.2, height: width / 1.50, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderColor: '#f4f4f4', borderWidth: 1 }}>
+                  <View style={{ borderRadius:10,marginRight: 10, width: width / 2.2, height: width / 1.40, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderColor: '#f4f4f4', borderWidth: 1 }}>
                     <Image source={require('../../assets/images/i2.jpg')}
                       style={{ width: width / 3.9, height: width / 3.40, borderRadius: 0 }}
                     />
@@ -451,13 +451,13 @@ export default class Home extends Component {
                       <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', color: '#666',fontSize:12 }}>4 Kg</Text>
                       
                     </View>
-                    <View style={{ borderWidth:0,backgroundColor: 'green', paddingVertical: 10, position: 'absolute', left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center',borderBottomRightRadius: 10,borderBottomLeftRadius: 10, }}>
-                      <Text style={{ fontSize: 14, fontFamily: 'AvenirNextLTPro-Bold', color: '#fff', fontWeight: '700' }}>Add to cart </Text>
+                    <View style={{ borderWidth:0,backgroundColor: 'green', paddingVertical: 10, position: 'absolute', left: 10, right: 10, bottom: 10, justifyContent: 'center', alignItems: 'center',borderRadius:5 }}>
+                       <Text style={{ fontSize: 12, fontFamily: 'AvenirNextLTPro-Bold', color: '#fff', fontWeight: '700' }}><FontAwesome5 name="plus" size={10}></FontAwesome5>  Add to cart </Text>
 
                     </View>
 
                   </View>
-                  <View style={{ borderRadius:10,marginRight: 10, width: width / 2.2, height: width / 1.50, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderColor: '#f4f4f4', borderWidth: 1 }}>
+                  <View style={{ borderRadius:10,marginRight: 10, width: width / 2.2, height: width / 1.40, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderColor: '#f4f4f4', borderWidth: 1 }}>
                     <Image source={require('../../assets/images/i1.jpg')}
                       style={{ width: width / 3.9, height: width / 3.40, borderRadius: 0 }}
                     />
@@ -471,14 +471,14 @@ export default class Home extends Component {
                       <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', color: '#666',fontSize:12 }}>4 Kg</Text>
                       
                     </View>
-                    <View style={{ borderWidth:0,backgroundColor: 'green', paddingVertical: 10, position: 'absolute', left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center',borderBottomRightRadius: 10,borderBottomLeftRadius: 10, }}>
-                      <Text style={{ fontSize: 14, fontFamily: 'AvenirNextLTPro-Bold', color: '#fff', fontWeight: '700' }}>Add to cart </Text>
+                    <View style={{ borderWidth:0,backgroundColor: 'green', paddingVertical: 10, position: 'absolute', left: 10, right: 10, bottom: 10, justifyContent: 'center', alignItems: 'center',borderRadius:5 }}>
+                       <Text style={{ fontSize: 12, fontFamily: 'AvenirNextLTPro-Bold', color: '#fff', fontWeight: '700' }}><FontAwesome5 name="plus" size={10}></FontAwesome5>  Add to cart </Text>
 
                     </View>
 
                   </View>
 
-                  <View style={{ borderRadius:10,marginRight: 10, width: width / 2.2, height: width / 1.50, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderColor: '#f4f4f4', borderWidth: 1 }}>
+                  <View style={{ borderRadius:10,marginRight: 10, width: width / 2.2, height: width / 1.40, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderColor: '#f4f4f4', borderWidth: 1 }}>
                     <Image source={require('../../assets/images/i3.jpg')}
                       style={{ width: width / 3.9, height: width / 3.40, borderRadius: 0 }}
                     />
@@ -492,14 +492,14 @@ export default class Home extends Component {
                       <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', color: '#666',fontSize:12 }}>4 Kg</Text>
                       
                     </View>
-                    <View style={{ borderWidth:0,backgroundColor: 'green', paddingVertical: 10, position: 'absolute', left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center',borderBottomRightRadius: 10,borderBottomLeftRadius: 10, }}>
-                      <Text style={{ fontSize: 14, fontFamily: 'AvenirNextLTPro-Bold', color: '#fff', fontWeight: '700' }}>Add to cart </Text>
+                    <View style={{ borderWidth:0,backgroundColor: 'green', paddingVertical: 10, position: 'absolute', left: 10, right: 10, bottom: 10, justifyContent: 'center', alignItems: 'center',borderRadius:5 }}>
+                       <Text style={{ fontSize: 12, fontFamily: 'AvenirNextLTPro-Bold', color: '#fff', fontWeight: '700' }}><FontAwesome5 name="plus" size={10}></FontAwesome5>  Add to cart </Text>
 
                     </View>
 
                   </View>
 
-                  <View style={{ borderRadius:10,marginRight: 10, width: width / 2.2, height: width / 1.50, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderColor: '#f4f4f4', borderWidth: 1 }}>
+                  <View style={{ borderRadius:10,marginRight: 10, width: width / 2.2, height: width / 1.40, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderColor: '#f4f4f4', borderWidth: 1 }}>
                     <Image source={require('../../assets/images/i5.jpg')}
                       style={{ width: width / 3.9, height: width / 3.40, borderRadius: 0 }}
                     />
@@ -513,8 +513,190 @@ export default class Home extends Component {
                       <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', color: '#666',fontSize:12 }}>4 Kg</Text>
                       
                     </View>
-                    <View style={{ borderWidth:0,backgroundColor: 'green', paddingVertical: 10, position: 'absolute', left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center',borderBottomRightRadius: 10,borderBottomLeftRadius: 10, }}>
-                      <Text style={{ fontSize: 14, fontFamily: 'AvenirNextLTPro-Bold', color: '#fff', fontWeight: '700' }}>Add to cart </Text>
+                    <View style={{ borderWidth:0,backgroundColor: 'green', paddingVertical: 10, position: 'absolute', left: 10, right: 10, bottom: 10, justifyContent: 'center', alignItems: 'center',borderRadius:5 }}>
+                       <Text style={{ fontSize: 12, fontFamily: 'AvenirNextLTPro-Bold', color: '#fff', fontWeight: '700' }}><FontAwesome5 name="plus" size={10}></FontAwesome5>  Add to cart </Text>
+
+                    </View>
+
+                  </View>
+
+                  
+                 
+                </ScrollView>
+              </View>
+
+              <View style={{ paddingLeft: 15, marginBottom: 20 }}>
+                <Text style={{ fontSize: 18, fontFamily: 'AvenirNextLTPro-Bold', marginBottom: 20, fontWeight: '700' }}>Daily Essentials</Text>
+                <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} >
+                  <View style={{ borderRadius:10,marginRight: 10, width: width / 2.2, height: width / 1.40, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderColor: '#f4f4f4', borderWidth: 1 }}>
+                    <Image source={require('../../assets/images/i2.jpg')}
+                      style={{ width: width / 3.9, height: width / 3.40, borderRadius: 0 }}
+                    />
+                    <View style={{ padding: 10 }}>
+                    <View style={{flexDirection:'row',alignItems:"center"}}>
+                    <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', fontSize: 16, fontWeight: '700' }}>₹522</Text>
+                    <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', fontSize: 14,color:'grey',marginLeft:10 }}>₹522</Text>
+                    </View>
+                      
+                      <Text style={{ fontSize: 13, fontFamily: 'AvenirNextLTPro-Bold', fontWeight: '700', color: '#666' }}>Ariel Complete Detergent Powder</Text>
+                      <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', color: '#666',fontSize:12 }}>4 Kg</Text>
+                      
+                    </View>
+                    <View style={{ borderWidth:0,backgroundColor: 'green', paddingVertical: 10, position: 'absolute', left: 10, right: 10, bottom: 10, justifyContent: 'center', alignItems: 'center',borderRadius:5 }}>
+                       <Text style={{ fontSize: 12, fontFamily: 'AvenirNextLTPro-Bold', color: '#fff', fontWeight: '700' }}><FontAwesome5 name="plus" size={10}></FontAwesome5>  Add to cart </Text>
+
+                    </View>
+
+                  </View>
+                  <View style={{ borderRadius:10,marginRight: 10, width: width / 2.2, height: width / 1.40, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderColor: '#f4f4f4', borderWidth: 1 }}>
+                    <Image source={require('../../assets/images/i1.jpg')}
+                      style={{ width: width / 3.9, height: width / 3.40, borderRadius: 0 }}
+                    />
+                    <View style={{ padding: 10 }}>
+                    <View style={{flexDirection:'row',alignItems:"center"}}>
+                    <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', fontSize: 16, fontWeight: '700' }}>₹522</Text>
+                    <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', fontSize: 14,color:'grey',marginLeft:10 }}>₹522</Text>
+                    </View>
+                      
+                      <Text style={{ fontSize: 13, fontFamily: 'AvenirNextLTPro-Bold', fontWeight: '700', color: '#666' }}>Ariel Complete Detergent Powder</Text>
+                      <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', color: '#666',fontSize:12 }}>4 Kg</Text>
+                      
+                    </View>
+                    <View style={{ borderWidth:0,backgroundColor: 'green', paddingVertical: 10, position: 'absolute', left: 10, right: 10, bottom: 10, justifyContent: 'center', alignItems: 'center',borderRadius:5 }}>
+                       <Text style={{ fontSize: 12, fontFamily: 'AvenirNextLTPro-Bold', color: '#fff', fontWeight: '700' }}><FontAwesome5 name="plus" size={10}></FontAwesome5>  Add to cart </Text>
+
+                    </View>
+
+                  </View>
+
+                  <View style={{ borderRadius:10,marginRight: 10, width: width / 2.2, height: width / 1.40, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderColor: '#f4f4f4', borderWidth: 1 }}>
+                    <Image source={require('../../assets/images/i3.jpg')}
+                      style={{ width: width / 3.9, height: width / 3.40, borderRadius: 0 }}
+                    />
+                    <View style={{ padding: 10 }}>
+                    <View style={{flexDirection:'row',alignItems:"center"}}>
+                    <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', fontSize: 16, fontWeight: '700' }}>₹522</Text>
+                    <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', fontSize: 14,color:'grey',marginLeft:10 }}>₹522</Text>
+                    </View>
+                      
+                      <Text style={{ fontSize: 13, fontFamily: 'AvenirNextLTPro-Bold', fontWeight: '700', color: '#666' }}>Ariel Complete Detergent Powder</Text>
+                      <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', color: '#666',fontSize:12 }}>4 Kg</Text>
+                      
+                    </View>
+                    <View style={{ borderWidth:0,backgroundColor: 'green', paddingVertical: 10, position: 'absolute', left: 10, right: 10, bottom: 10, justifyContent: 'center', alignItems: 'center',borderRadius:5 }}>
+                       <Text style={{ fontSize: 12, fontFamily: 'AvenirNextLTPro-Bold', color: '#fff', fontWeight: '700' }}><FontAwesome5 name="plus" size={10}></FontAwesome5>  Add to cart </Text>
+
+                    </View>
+
+                  </View>
+
+                  <View style={{ borderRadius:10,marginRight: 10, width: width / 2.2, height: width / 1.40, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderColor: '#f4f4f4', borderWidth: 1 }}>
+                    <Image source={require('../../assets/images/i5.jpg')}
+                      style={{ width: width / 3.9, height: width / 3.40, borderRadius: 0 }}
+                    />
+                    <View style={{ padding: 10 }}>
+                    <View style={{flexDirection:'row',alignItems:"center"}}>
+                    <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', fontSize: 16, fontWeight: '700' }}>₹522</Text>
+                    <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', fontSize: 14,color:'grey',marginLeft:10 }}>₹522</Text>
+                    </View>
+                      
+                      <Text style={{ fontSize: 13, fontFamily: 'AvenirNextLTPro-Bold', fontWeight: '700', color: '#666' }}>Ariel Complete Detergent Powder</Text>
+                      <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', color: '#666',fontSize:12 }}>4 Kg</Text>
+                      
+                    </View>
+                    <View style={{ borderWidth:0,backgroundColor: 'green', paddingVertical: 10, position: 'absolute', left: 10, right: 10, bottom: 10, justifyContent: 'center', alignItems: 'center',borderRadius:5 }}>
+                       <Text style={{ fontSize: 12, fontFamily: 'AvenirNextLTPro-Bold', color: '#fff', fontWeight: '700' }}><FontAwesome5 name="plus" size={10}></FontAwesome5>  Add to cart </Text>
+
+                    </View>
+
+                  </View>
+
+                  
+                 
+                </ScrollView>
+              </View>
+
+              <View style={{ paddingLeft: 15, marginBottom: 20 }}>
+                <Text style={{ fontSize: 18, fontFamily: 'AvenirNextLTPro-Bold', marginBottom: 20, fontWeight: '700' }}>Recommended For You</Text>
+                <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} >
+                  <View style={{ borderRadius:10,marginRight: 10, width: width / 2.2, height: width / 1.40, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderColor: '#f4f4f4', borderWidth: 1 }}>
+                    <Image source={require('../../assets/images/i2.jpg')}
+                      style={{ width: width / 3.9, height: width / 3.40, borderRadius: 0 }}
+                    />
+                    <View style={{ padding: 10 }}>
+                    <View style={{flexDirection:'row',alignItems:"center"}}>
+                    <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', fontSize: 16, fontWeight: '700' }}>₹522</Text>
+                    <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', fontSize: 14,color:'grey',marginLeft:10 }}>₹522</Text>
+                    </View>
+                      
+                      <Text style={{ fontSize: 13, fontFamily: 'AvenirNextLTPro-Bold', fontWeight: '700', color: '#666' }}>Ariel Complete Detergent Powder</Text>
+                      <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', color: '#666',fontSize:12 }}>4 Kg</Text>
+                      
+                    </View>
+                    <View style={{ borderWidth:0,backgroundColor: 'green', paddingVertical: 10, position: 'absolute', left: 10, right: 10, bottom: 10, justifyContent: 'center', alignItems: 'center',borderRadius:5 }}>
+                       <Text style={{ fontSize: 12, fontFamily: 'AvenirNextLTPro-Bold', color: '#fff', fontWeight: '700' }}><FontAwesome5 name="plus" size={10}></FontAwesome5>  Add to cart </Text>
+
+                    </View>
+
+                  </View>
+                  <View style={{ borderRadius:10,marginRight: 10, width: width / 2.2, height: width / 1.40, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderColor: '#f4f4f4', borderWidth: 1 }}>
+                    <Image source={require('../../assets/images/i1.jpg')}
+                      style={{ width: width / 3.9, height: width / 3.40, borderRadius: 0 }}
+                    />
+                    <View style={{ padding: 10 }}>
+                    <View style={{flexDirection:'row',alignItems:"center"}}>
+                    <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', fontSize: 16, fontWeight: '700' }}>₹522</Text>
+                    <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', fontSize: 14,color:'grey',marginLeft:10 }}>₹522</Text>
+                    </View>
+                      
+                      <Text style={{ fontSize: 13, fontFamily: 'AvenirNextLTPro-Bold', fontWeight: '700', color: '#666' }}>Ariel Complete Detergent Powder</Text>
+                      <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', color: '#666',fontSize:12 }}>4 Kg</Text>
+                      
+                    </View>
+                    <View style={{ borderWidth:0,backgroundColor: 'green', paddingVertical: 10, position: 'absolute', left: 10, right: 10, bottom: 10, justifyContent: 'center', alignItems: 'center',borderRadius:5 }}>
+                       <Text style={{ fontSize: 12, fontFamily: 'AvenirNextLTPro-Bold', color: '#fff', fontWeight: '700' }}><FontAwesome5 name="plus" size={10}></FontAwesome5>  Add to cart </Text>
+
+                    </View>
+
+                  </View>
+
+                  <View style={{ borderRadius:10,marginRight: 10, width: width / 2.2, height: width / 1.40, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderColor: '#f4f4f4', borderWidth: 1 }}>
+                    <Image source={require('../../assets/images/i3.jpg')}
+                      style={{ width: width / 3.9, height: width / 3.40, borderRadius: 0 }}
+                    />
+                    <View style={{ padding: 10 }}>
+                    <View style={{flexDirection:'row',alignItems:"center"}}>
+                    <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', fontSize: 16, fontWeight: '700' }}>₹522</Text>
+                    <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', fontSize: 14,color:'grey',marginLeft:10 }}>₹522</Text>
+                    </View>
+                      
+                      <Text style={{ fontSize: 13, fontFamily: 'AvenirNextLTPro-Bold', fontWeight: '700', color: '#666' }}>Ariel Complete Detergent Powder</Text>
+                      <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', color: '#666',fontSize:12 }}>4 Kg</Text>
+                      
+                    </View>
+                    <View style={{ borderWidth:0,backgroundColor: 'green', paddingVertical: 10, position: 'absolute', left: 10, right: 10, bottom: 10, justifyContent: 'center', alignItems: 'center',borderRadius:5 }}>
+                       <Text style={{ fontSize: 12, fontFamily: 'AvenirNextLTPro-Bold', color: '#fff', fontWeight: '700' }}><FontAwesome5 name="plus" size={10}></FontAwesome5>  Add to cart </Text>
+
+                    </View>
+
+                  </View>
+
+                  <View style={{ borderRadius:10,marginRight: 10, width: width / 2.2, height: width / 1.40, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderColor: '#f4f4f4', borderWidth: 1 }}>
+                    <Image source={require('../../assets/images/i5.jpg')}
+                      style={{ width: width / 3.9, height: width / 3.40, borderRadius: 0 }}
+                    />
+                    <View style={{ padding: 10 }}>
+                    <View style={{flexDirection:'row',alignItems:"center"}}>
+                    <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', fontSize: 16, fontWeight: '700' }}>₹522</Text>
+                    <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', fontSize: 14,color:'grey',marginLeft:10 }}>₹522</Text>
+                    </View>
+                      
+                      <Text style={{ fontSize: 13, fontFamily: 'AvenirNextLTPro-Bold', fontWeight: '700', color: '#666' }}>Ariel Complete Detergent Powder</Text>
+                      <Text style={{ fontFamily: 'AvenirNextLTPro-Regular', color: '#666',fontSize:12 }}>4 Kg</Text>
+                      
+                    </View>
+                    <View style={{ borderWidth:0,backgroundColor: 'green', paddingVertical: 10, position: 'absolute', left: 10, right: 10, bottom: 10, justifyContent: 'center', alignItems: 'center',borderRadius:5 }}>
+                       <Text style={{ fontSize: 12, fontFamily: 'AvenirNextLTPro-Bold', color: '#fff', fontWeight: '700' }}><FontAwesome5 name="plus" size={10}></FontAwesome5>  Add to cart </Text>
 
                     </View>
 

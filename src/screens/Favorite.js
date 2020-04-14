@@ -16,7 +16,7 @@ export default class Fevorite extends Component {
                 <Container>
 
 
-                    <Header hasTabs style={{ backgroundColor: '#f3f6f9' }}>
+                    <Header hasTabs style={{ backgroundColor: '#fff' }}>
                         <StatusBar backgroundColor="green" barStyle="light-content" />
                         {/* <Left>
                             <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', padding: 5, }}>
@@ -41,10 +41,10 @@ export default class Fevorite extends Component {
                     </Header>
 
                     <Tabs >
-                        <Tab heading={<TabHeading style={{ backgroundColor: 'green' }}><Text>Product</Text></TabHeading>}>
+                        <Tab heading={<TabHeading style={{ backgroundColor: 'green' }}><Text style={{fontWeight:'700'}}>Product</Text></TabHeading>}>
                             <Product />
                         </Tab>
-                        <Tab heading={<TabHeading style={{ backgroundColor: 'green' }}><Text>Recipe</Text></TabHeading>}>
+                        <Tab heading={<TabHeading style={{ backgroundColor: 'green' }}><Text style={{fontWeight:'700',}}>Recipe</Text></TabHeading>}>
                             <Recipe />
                         </Tab>
 

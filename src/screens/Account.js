@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { View, Text, ScrollView, StatusBar, StyleSheet, SafeAreaView, TouchableOpacity, TouchableHighlight } from 'react-native'
+import { View, Text,Image, ScrollView, StatusBar, StyleSheet, SafeAreaView, TouchableOpacity, TouchableHighlight } from 'react-native'
 import { Button, Thumbnail, Container, Item, Input, Label, Picker, Textarea, Right, Title, Form, Header, Content, Card, CardItem, Body, Left, Icon, ListItem, List } from 'native-base';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-import { Actions } from 'react-native-router-flux'
+
 
 
 export default class Account extends Component {
@@ -12,7 +12,7 @@ export default class Account extends Component {
                 <StatusBar backgroundColor="green" barStyle="light-content" />
                 <View style={{ backgroundColor: '#f3f6f9', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: 10, }}>
                     <View style={{ alignItems: 'flex-start', padding: 10, }}>
-                        <Text style={{ fontSize: 18, fontWeight: "bold", fontFamily: 'AvenirNextLTPro-Bold', color: "green" }}>Your Account</Text>
+                        <Text style={{ fontSize: 18, fontWeight: "bold", fontFamily: 'AvenirNextLTPro-Bold', color: "green" }}>My Account</Text>
                     </View>
                     {/* <View style={{ justifyContent: "flex-end", flexDirection: 'row' }}>
                             <Text style={{ fontSize: 10, marginRight: 20, fontFamily: 'AvenirNextLTPro-Bold', color: "#000" }}>
@@ -25,34 +25,84 @@ export default class Account extends Component {
                         </View> */}
                 </View>
                 <ScrollView>
-                   <TouchableOpacity>
-                   <View style={styles.container}>
-                      <Text style={styles.bold}>Settings</Text>
+                   <View>
+                   <View style={{ padding: 10, backgroundColor: '#fff', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+                        <View style={{ flex: 1, }}>
+                           <FontAwesome5 name="user-circle" size={45} color={'green'}></FontAwesome5>
+                        </View>
+                        <View style={{ flex: 5,  }}>
+                            <Text style={{color:'#4f4f4f',fontWeight:'700'}}>
+                                Shubhang Verma
+                            </Text>
+                            <Text style={{color:'#4f4f4f',fontSize:12}}>
+                                shubhang554@gmail.com
+                            </Text>
+                            <Text style={{color:'#4f4f4f',fontSize:12}}>
+                                +91 8423446000
+                            </Text>
+                        </View>
+                        <View style={{}}>
+                            <Button transparent small onPress={() => this.props.navigation.navigate('EditProfile')}>
+                            <FontAwesome5 name="pencil-alt" size={18} color={'green'} style={{padding: 10,}}></FontAwesome5>
+                            </Button>
+                        </View>
                     </View>
-                   </TouchableOpacity>
-                   <TouchableOpacity>
-                   <View style={styles.container}>
-                      <Text style={styles.bold}>Settings</Text>
+                    <View style={{backgroundColor:'#f3f6f9',paddingHorizontal:10,paddingVertical:10,flexDirection:'row',justifyContent:'space-between',alignItems:'center'}}>
+                        <View style={{flex:0.5,justifyContent:'center',alignItems:'center'}}>
+                        <FontAwesome5 name="map-marker-alt" size={18} color={'green'}></FontAwesome5>
+                        </View>
+                        <View style={{flex:3,justifyContent:'flex-start',alignItems:'center'}}>
+                       
+                            <Text>
+                                1004,Parsvnath Planet, Vibhuti Khand ,Gomti,Nagar,Lucknow</Text>
+                           
+                        </View>
+                        <View style={{flex:0.7}}>
+                        <Button bordered success small style={{justifyContent:'center',alignItems:'center'}} onPress={() => this.props.navigation.navigate('ChangeAddress')}>
+                                <Text style={{fontSize:10,textAlign:'center'}}> Change</Text>
+                            </Button>
+                        </View>
                     </View>
-                   </TouchableOpacity>
-                   <TouchableOpacity>
-                   <View style={styles.container}>
-                      <Text style={styles.bold}>Settings</Text>
-                    </View>
-                   </TouchableOpacity>
-                   <TouchableOpacity>
-                   <View style={styles.container}>
-                      <Text style={styles.bold}>Settings</Text>
-                    </View>
-                   </TouchableOpacity>
-                   <TouchableOpacity onPress={() => this.props.navigation.navigate('Settings')}>
-                   <View style={styles.container}>
-                      <Text style={styles.bold}>Settings</Text>
-                    </View>
-                   </TouchableOpacity>
-                   
+                   </View>
+                    <TouchableOpacity>
+                        <View style={styles.container}>
+                            <Text style={styles.bold}><FontAwesome5 name="comment-alt" size={15} color={'green'}></FontAwesome5>  Go to FeedItem</Text>
+                        </View>
+                    </TouchableOpacity>
+                    <TouchableOpacity>
+                        <View style={styles.container}>
+                            <Text style={styles.bold}><FontAwesome5 name="user-shield" size={15} color={'green'}></FontAwesome5>  Personal Details</Text>
+                        </View>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={() => this.props.navigation.navigate('ChangePassword')}>
+                        <View style={styles.container}>
+                           
+                            <Text style={styles.bold}><FontAwesome5 name="key" size={15} color={'green'}></FontAwesome5>  Change Password</Text>
+                        </View>
+                    </TouchableOpacity>
+                    <TouchableOpacity  onPress={() => this.props.navigation.navigate('AddNewAddress')}>
+                        <View style={styles.container}>
+                            <Text style={styles.bold}><FontAwesome5 name="book-reader" size={15} color={'green'}></FontAwesome5>  Address Book</Text>
+                        </View>
+                    </TouchableOpacity>
+                    <TouchableOpacity>
+                        <View style={styles.container}>
+                            <Text style={styles.bold}><FontAwesome5 name="book" size={15} color={'green'}></FontAwesome5>  Phone Book</Text>
+                        </View>
+                    </TouchableOpacity>
+                    <TouchableOpacity>
+                        <View style={styles.container}>
+                            <Text style={styles.bold}><FontAwesome5 name="credit-card" size={15} color={'green'}></FontAwesome5>  Payment Card</Text>
+                        </View>
+                    </TouchableOpacity>
+                    <TouchableOpacity>
+                        <View style={styles.container}>
+                            <Text style={styles.bold}><FontAwesome5 name="sign-out-alt" size={15} color={'green'}></FontAwesome5>  Logout</Text>
+                        </View>
+                    </TouchableOpacity>
 
-                 
+
+
                 </ScrollView>
             </>
         );
@@ -163,30 +213,30 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         backgroundColor: "#fff",
         paddingHorizontal: 15,
-        paddingVertical:15,
+        paddingVertical: 15,
         margin: 2,
-      },
-      top: {
+    },
+    top: {
         flex: 1,
         backgroundColor: "grey",
         borderWidth: 5,
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,
-      },
-      middle: {
+    },
+    middle: {
         flex: 2,
         backgroundColor: "beige",
         borderWidth: 5,
-      },
-      bottom: {
+    },
+    bottom: {
         flex: 3,
         backgroundColor: "pink",
         borderWidth: 5,
         borderBottomLeftRadius: 20,
         borderBottomRightRadius: 20,
-      },
-      bold:{
-          fontWeight:'700'
-      },
+    },
+    bold: {
+        fontWeight: '700'
+    },
 
 })
